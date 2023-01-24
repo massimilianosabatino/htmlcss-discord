@@ -154,12 +154,18 @@ header .menu a {
     color: white;
 }
 
+.button.md-blu {
+    background-color: #7289DA;
+    border: 1px solid #7289DA;
+    color: white;
+}
 
 /*
 * Typo
 */
 h1, h2, h3, h4, h5, h6 {
     font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
 }
 
 h1 {
@@ -172,6 +178,11 @@ h2 {
     font-weight: 600;
     line-height: 1.2em;
     margin-bottom: 35px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 p {
     font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -286,15 +297,20 @@ main .flex-container:nth-child(even) > .row {
 }
 
 .secondary {
-    background-color: #d3d3d3;
+    background-color: #fefefe;
     padding: 50px 0;
 }
 
 .big-box {
     width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
 
+.call {
+    background: url(../img/stars.svg) center -25px/430px no-repeat;
+    
+}
 
 
 /*
