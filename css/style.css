@@ -142,7 +142,7 @@ footer a {
 
 .button {
     border-radius: 40px;
-    padding: 7px 15px;
+    padding: 10px 15px;
     font-size: 14px;
 }
 
@@ -156,6 +156,12 @@ footer a {
     background-color: white;
     border: 1px solid white;
     color: black;
+}
+
+.banner .button.black,
+.big-box .button.md-blu,
+.banner .button.white {
+    font-size: 20px;
 }
 
 .button.black {
@@ -185,12 +191,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 800;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 44px;
     font-weight: 600;
     line-height: 1.2em;
     margin-bottom: 35px;
@@ -202,7 +208,7 @@ h3 {
 }
 
 footer .col-social > h3 {
-    font-size: 16px;
+    font-size: 28px;
     color: #7289DA;
 }
 
@@ -214,7 +220,8 @@ h4 {
 
 p {
     font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 1.7em;
+    /* line-height: 1.7em; */
+    font-size: 1.3em;
 }
 
 span {
@@ -276,7 +283,7 @@ nav > .menu > li {
 
 .login {
     width: 20%;
-    text-align: center;
+    text-align: right;
     padding-right: 10px;
 }
 
@@ -286,12 +293,12 @@ nav > .menu > li {
 * Header banner
 */
 .banner {
-    padding: 100px 0 118px 0;
-    background: url(../img/jumbo.png) center/120% no-repeat;
+    padding: 120px 0 118px 0;
+    background: url(../img/jumbo.png) center/cover no-repeat;
 }
 
 .banner-pay {
-    max-width: 80%;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
@@ -299,6 +306,7 @@ nav > .menu > li {
 .banner-pay > p {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 0 70px;
 }
 
 .banner-pay > a {
@@ -325,7 +333,7 @@ nav > .menu > li {
     position: absolute;
     min-height: 150px;
     width: 100%;
-    bottom: -40px;
+    bottom: -380px;
     text-align: center;
 }
 .wave::before {
@@ -334,7 +342,7 @@ nav > .menu > li {
     position: absolute;
     background-image: url(../img/wave.svg);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 2000px;
     height: 100%;
     filter: invert(100%) sepia(2%) saturate(981%) hue-rotate(222deg) brightness(113%) contrast(93%);
     z-index: -1;
@@ -345,10 +353,10 @@ nav > .menu > li {
     position: absolute;
     background-image: url(../img/wave.svg);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 2000px;
     height: 100%;
     filter: invert(100%) sepia(2%) saturate(981%) hue-rotate(222deg) brightness(113%) contrast(93%);
-    transform: rotate(180deg) translate(0, -400%) ;
+    transform: rotate(180deg) translate(0, -382%) ;
     z-index: -1;
 }
 
@@ -365,7 +373,7 @@ nav > .menu > li {
     position: absolute;
     background-image: url(../img/wave.svg);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 2000px;
     height: 100%;
     background-size: 100% 56px;
     filter: invert(100%) sepia(2%) saturate(981%) hue-rotate(222deg) brightness(113%) contrast(93%);
@@ -411,7 +419,11 @@ main .flex-container:nth-child(even) > .row {
 }
 
 .call {
-    background: url(../img/stars.svg) center -25px/430px no-repeat; 
+    background: url(../img/stars.svg) center -15px/430px no-repeat; 
+}
+
+.call > h3 {
+    line-height: 2em;
 }
 
 
@@ -463,7 +475,7 @@ hr {
     vertical-align: middle;
 }
 
-.lang-selector > i {
+.lang-selector  i {
     color: white;
     font-size: 12px;
 }
@@ -472,8 +484,8 @@ hr {
     margin-left: -10px;
 }
 
-.social > i {
+.social > a > i {
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     margin: 20px 10px;
 }
