@@ -211,6 +211,11 @@ p {
     line-height: 1.7em;
 }
 
+span {
+    color: white;
+    font-size: 12px;
+}
+
 ul {
     font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
@@ -381,4 +386,23 @@ footer li {
 hr {
     max-width: 80%;
     margin: 0 auto;
+}
+
+.lang-selector > img {
+    height: 16px;
+    vertical-align: middle;
+}
+
+.lang-selector > i {
+    color: white;
+    font-size: 12px;
+}
+
+.social {
+    margin-left: -10px;
+}
+.social > i {
+    color: white;
+    font-size: 14px;
+    margin: 20px 10px;
 }
