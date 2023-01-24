@@ -7,7 +7,47 @@
     box-sizing: border-box;
 }
 
+/*
+* Media import
+*/
+@font-face {
+    font-family: 'gg sans';
+    src: url('font/ggsans-Normal.eot');
+    src: local('gg sans Normal'), local('ggsans-Normal'),
+        url('font/ggsans-Normal.eot?#iefix') format('embedded-opentype'),
+        url('font/ggsans-Normal.woff2') format('woff2'),
+        url('font/ggsans-Normal.woff') format('woff'),
+        url('font/ggsans-Normal.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
 
+@font-face {
+    font-family: 'gg sans';
+    src: url('font/ggsans-Bold.eot');
+    src: local('gg sans Bold'), local('ggsans-Bold'),
+        url('font/ggsans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/ggsans-Bold.woff2') format('woff2'),
+        url('font/ggsans-Bold.woff') format('woff'),
+        url('font/ggsans-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'gg sans';
+    src: url('font/ggsans-ExtraBold.eot');
+    src: local('gg sans ExtraBold'), local('ggsans-ExtraBold'),
+        url('font/ggsans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('font/ggsans-ExtraBold.woff2') format('woff2'),
+        url('font/ggsans-ExtraBold.woff') format('woff'),
+        url('font/ggsans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
 
 /*
 * Debug
@@ -29,7 +69,7 @@
     background-color: #00008b;
 }
 
-.debug .banner-img {
+.debug .banner-pay {
     width: 900px;
     height: 400px;
     background-color: #ee82ee;
@@ -75,10 +115,78 @@
     border: 1px dashed black;
 }
 
+
+
+/*
+* Common
+*/
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+header .menu a {
+    color: white;
+    font-weight: 600;
+}
+
+.button {
+    border-radius: 40px;
+    padding: 7px 15px;
+    font-size: 14px;
+}
+.button:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    color: #00008b;
+    text-decoration: none;
+}
+
+.button.white {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+}
+
+.button.black {
+    background-color: #23272A;
+    border: 1px solid #23272A;
+    color: white;
+}
+
+
+/*
+* Typo
+*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+p {
+    font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.7em;
+}
+
+ul {
+    font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+.login {font-family: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;}
 /*
 * Header menu
 */
+header {
+    background-color: #255EE9;
+    color: white;
+}
+
 .container-menu {
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,6 +196,11 @@
 .logo {
     width: 20%;
     padding-left: 10px;
+}
+
+.logo > img {
+    width: 124px;
+    height: 34px;
 }
 
 nav {
@@ -106,7 +219,7 @@ nav > .menu > li {
 
 .login {
     width: 20%;
-    text-align: right;
+    text-align: center;
     padding-right: 10px;
 }
 
@@ -116,11 +229,24 @@ nav > .menu > li {
 * Header banner
 */
 .banner {
-    padding: 50px 0;
+    padding: 100px 0 118px 0;
+    background: url(../img/jumbo.png) center/120% no-repeat;
+    background: ;
 }
 
-.banner-img {
+.banner-pay {
+    max-width: 80%;
     margin: 0 auto;
+    text-align: center;
+}
+
+.banner-pay > p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-pay > a {
+    margin: 0 5px;
 }
 
 
